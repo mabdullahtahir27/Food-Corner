@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Corner</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS
+         This demonstrates internal CSS.
+    -->
+    <style>
+        .welcome-text {
+            font-style: italic;
+        }
+
+        #special-message {
+            color: darkgreen;
+        }
+
+        /* Same specificity demonstration:
+           the second rule wins because it appears later. */
+        .cascade-demo {
+            color: blue;
+        }
+
+        .cascade-demo {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="home">
+
+        <nav class="navbar">
+
+            <!-- INLINE CSS demonstration -->
+            <h1 style="letter-spacing: 2px;">Food Corner</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= WELCOME SECTION ================= -->
+
+    <section class="welcome">
+
+        <div class="welcome-content">
+
+            <h2>Welcome to Food Corner</h2>
+
+            <p class="welcome-text">
+                Delicious food, fresh ingredients and amazing flavors
+                served with a smile.
+            </p>
+
+            <p id="special-message">
+                Freshly prepared just for you!
+            </p>
+
+            <a href="#menu" class="menu-button">
+                Explore Menu
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU SECTION ================= -->
+
+    <section id="menu" class="menu-section">
+
+        <h2>Our Delicious Menu</h2>
+
+        <p class="section-intro">
+            Choose your favorite meal from our delicious selection.
+        </p>
+
+        <div class="food-container">
+
+
+            <!-- CARD 1 -->
+
+            <div class="food-card">
+
+                <img
+                    src="images/pizza.jpg"
+                    alt="Delicious Pizza"
+                >
+
+                <div class="card-content">
+
+                    <h3>Pizza</h3>
+
+                    <p>
+                        Cheesy pizza topped with fresh vegetables
+                        and delicious herbs.
+                    </p>
+
+                    <p class="price">$8.99</p>
+
+                    <a
+                        href="mailto:mabdullahtahir27@gmail.com?subject=Pizza%20Order&body=Hello%20Food%20Corner,%0D%0AI%20would%20like%20to%20order%20Pizza.%0D%0AThank%20you!"
+                        class="order-button"
+                    >
+                        Order Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="food-card">
+
+                <img
+                    src="images/burger.jpg"
+                    alt="Juicy Burger"
+                >
+
+                <div class="card-content">
+
+                    <h3>Burger</h3>
+
+                    <p>
+                        Juicy grilled burger with fresh lettuce,
+                        tomato and special sauce.
+                    </p>
+
+                    <p class="price">$6.99</p>
+
+                    <a
+                        href="mailto:mabdullahtahir27@gmail.com?subject=Burger%20Order&body=Hello%20Food%20Corner,%0D%0AI%20would%20like%20to%20order%20a%20Burger.%0D%0AThank%20you!"
+                        class="order-button"
+                    >
+                        Order Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="food-card">
+
+                <img
+                    src="images/sandwich.jpg"
+                    alt="Fresh Sandwich"
+                >
+
+                <div class="card-content">
+
+                    <h3>Sandwich</h3>
+
+                    <p>
+                        Freshly made sandwich filled with vegetables,
+                        cheese and tasty sauce.
+                    </p>
+
+                    <p class="price">$5.49</p>
+
+                    <a
+                        href="mailto:mabdullahtahir27@gmail.com?subject=Sandwich%20Order&body=Hello%20Food%20Corner,%0D%0AI%20would%20like%20to%20order%20a%20Sandwich.%0D%0AThank%20you!"
+                        class="order-button"
+                    >
+                        Order Now
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="food-card">
+
+                <img
+                    src="images/pasta.jpg"
+                    alt="Creamy Pasta"
+                >
+
+                <div class="card-content">
+
+                    <h3>Pasta</h3>
+
+                    <p>
+                        Creamy pasta prepared with fresh ingredients
+                        and our special homemade sauce.
+                    </p>
+
+                    <p class="price">$7.99</p>
+
+                    <a
+                        href="mailto:mabdullahtahir27@gmail.com?subject=Pasta%20Order&body=Hello%20Food%20Corner,%0D%0AI%20would%20like%20to%20order%20Pasta.%0D%0AThank%20you!"
+                        class="order-button"
+                    >
+                        Order Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CSS DEMONSTRATION ================= -->
+
+    <section class="css-demo">
+
+        <h2>CSS Demonstration</h2>
+
+        <p class="cascade-demo">
+            This text demonstrates the CSS cascade.
+            The later rule with the same specificity is applied.
+        </p>
+
+        <p>
+            This section also helps demonstrate width,
+            height, min/max constraints and overflow.
+        </p>
+
+    </section>
+
+
+    <!-- ================= MARGIN COLLAPSING ================= -->
+
+    <section class="margin-demo">
+
+        <h2>Spacing Demonstration</h2>
+
+        <div class="margin-box-one">
+            First block element
+        </div>
+
+        <div class="margin-box-two">
+            Second block element
+        </div>
+
+    </section>
+
+
+    <!-- ================= OVERFLOW ================= -->
+
+    <section class="overflow-section">
+
+        <h2>Overflow Demonstration</h2>
+
+        <div class="overflow-box">
+
+            This is an overflow demonstration box.
+            There is more text here than the box can normally
+            display. When the content becomes larger than the
+            available height, CSS overflow controls what happens.
+            The overflow property can be visible, hidden or scroll.
+            This gives us a practical demonstration of the CSS
+            overflow property.
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+        <h2>About Food Corner</h2>
+
+        <p>
+            Food Corner is a fictional restaurant created for this
+            HTML and CSS laboratory project. We believe that good
+            food brings people together. Our menu combines fresh
+            ingredients, delicious recipes and friendly service to
+            create a memorable dining experience.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Have a question or want to place an order?
+            Send us a message.
+        </p>
+
+
+        <!-- MAILTO FORM -->
+
+        <form
+            action="mailto:mabdullahtahir27@gmail.com"
+            method="post"
+            enctype="text/plain"
+            class="contact-form"
+        >
+
+            <label for="name">
+                Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="email">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                name="Message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+<p class="hidden-example">
+    This paragraph is hidden using display: none.
+</p>
+
+    <footer>
+
+        <p>
+            © 2026 Food Corner
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
